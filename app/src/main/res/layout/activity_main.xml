@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/amit_bindal_intro_pic"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/pic_bg"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Sri Amit Bindal Blogs"
+            android:textSize="36sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:letterSpacing="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/content" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Hi, this is the political blog app by Sri Amit Bindal"
+            android:textColor="#9F9F9F"
+            app:layout_constraintStart_toStartOf="parent"
+            android:letterSpacing="0.02"
+            android:padding="10dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_up_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvAlreadyaccount"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btnSignUp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:letterSpacing="0.02"
+            android:id="@+id/tvAlreadyaccount"
+            android:textColor="#9F9F9F"
+            android:text="Already have an account?"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:letterSpacing="0.02"
+            android:textColor="#01A8E9"
+            android:layout_marginBottom="15dp"
+            android:text=" Sign in"
+            app:layout_constraintStart_toEndOf="@id/tvAlreadyaccount"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

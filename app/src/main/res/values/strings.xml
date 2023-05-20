@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AmitBindalBlogs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">773104424012166</string>
+    <string name="fb_login_protocol_scheme">fb773104424012166</string>
+    <string name="facebook_client_token">56789</string>
+
+    <string name="web_client_id">757764330559-6vlqhfq1v9mpp5o76rr4m5rvssv0mib4.apps.googleusercontent.com</string>
+
+
+</resources>

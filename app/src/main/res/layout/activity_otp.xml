@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/back_vector"
+        android:drawablePadding="10dp"
+        android:letterSpacing="0.02"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:letterSpacing="0.02"
+        android:text="Enter 4-digit Code"
+        android:textColor="#121212"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:letterSpacing="0.02"
+        android:text="Enter the 4-digit Code received on your mobile:"
+        android:textColor="#434343"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintBottom_toTopOf="@id/otp1"/>
+
+    <EditText
+        android:id="@+id/otp1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/otp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/otp2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:letterSpacing="0.02"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/otp3"
+        app:layout_constraintStart_toEndOf="@id/otp1"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/otp3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/otp4"
+        app:layout_constraintStart_toEndOf="@id/otp2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/otp4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/otp3"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/black"
+        android:letterSpacing="0.02"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

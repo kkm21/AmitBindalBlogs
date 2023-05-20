@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757764330559",
+    "project_id": "amitbindalblogs-98a60",
+    "storage_bucket": "amitbindalblogs-98a60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757764330559:android:4eccc08c45ed480ae0948a",
+        "android_client_info": {
+          "package_name": "com.example.amitbindalblogs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757764330559-omka9r6qh9lghsdpa6ulve2s76krv4k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdg8_edjFNUPweqYThr1-WvAhpVb6PIAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757764330559-omka9r6qh9lghsdpa6ulve2s76krv4k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

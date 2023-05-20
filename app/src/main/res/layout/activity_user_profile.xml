@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/IVUserPic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/userPic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/amit_bindal_intro_pic" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:letterSpacing="0.02"
+        android:text="User NAme"
+        android:textColor="#121212"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IVUserPic" />
+
+    <LinearLayout
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#f2f2f2"
+        android:orientation="horizontal"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:padding="10dp"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/editing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="Edit Profile"
+            android:textColor="#121212"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bookmarkRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f2f2f2"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile">
+
+        <ImageView
+            android:id="@+id/bookmarkPic"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:src="@drawable/bookmark_pressed"
+            android:background="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmarks"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/bookmarkPic"
+            android:letterSpacing="0.02"
+            android:layout_marginStart="15dp"
+            android:textColor="#121212"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_vector"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:rotation="-180"
+            android:background="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/termsConditionsRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f2f2f2"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/bookmarkRL">
+
+        <ImageView
+            android:id="@+id/privacyPic"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/terms_and_conditions"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Privacy"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/privacyPic"
+            android:layout_marginStart="15dp"
+            android:letterSpacing="0.02"
+            android:textColor="#121212"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_vector"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:rotation="-180"
+            android:background="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logOutRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f2f2f2"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/termsConditionsRL">
+
+        <ImageView
+            android:id="@+id/logoutPic"
+            android:layout_width="20dp"
+            android:background="@color/black"
+            android:layout_height="25dp"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            android:src="@drawable/baseline_logout_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/logoutPic"
+            android:layout_marginStart="15dp"
+            android:letterSpacing="0.02"
+            android:textColor="#121212"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_vector"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:rotation="-180"
+            android:background="@color/black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/communityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community"
+        android:textColor="#9f9f9f"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logOutRL"/>
+
+    <RelativeLayout
+        android:id="@+id/emailRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f2f2f2"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/communityTV">
+
+        <ImageView
+            android:id="@+id/emailPic"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/emailPic"
+            android:letterSpacing="0.02"
+            android:layout_marginStart="15dp"
+            android:textColor="#121212"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_vector"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:rotation="-180"
+            android:background="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/twitterRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#f2f2f2"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/emailRL">
+
+        <ImageView
+            android:id="@+id/twitterPic"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/twitter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/twitterPic"
+            android:layout_marginStart="15dp"
+            android:letterSpacing="0.02"
+            android:textColor="#121212"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_vector"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:rotation="-180"
+            android:background="@color/black"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
